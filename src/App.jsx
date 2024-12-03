@@ -6,6 +6,10 @@ const App = () => {
   const y = 20;
   //using loops and rebdering elements/lists
   const names = ["Brad", "Mary", "John", "Kelly"];
+  const loggedIn = true;
+  // if (loggedIn) {
+  //   return <h1>Hello member</h1>;
+  // }
   return (
     <>
       <div className="text-5xl">App</div>
@@ -18,6 +22,7 @@ const App = () => {
           <li key={index}>{name}</li>
         ))}
       </ul>
+      {loggedIn ? <h1>Hello member</h1> : <h1>Hello Guest</h1>}
     </>
   );
 };
